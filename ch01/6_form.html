@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        ### form태그 안에 기본적으로 넣어야하는 속성들 ###
+            method : get/post
+                -get 방식 : 전송했을 때 url의 ?뒤에 쿼리문으로 붙어서 감
+                -psot 방식 : 전송했을 때 넘기는 데이터가 뭔지 보여주지 않고 넘김
+            action : action에 정의한 주소로 form태그 안의 데이터들이 넘어감
+            enctype : form태그 안에 첨부파일이 있을 때 사용   
+        
+            input태그 안에 name속성(key value type)을 작성해줘야함 (input태그에 작성된 값의 변수명을 지정해주는 것임)
+    -->
+    <form method="" action="" enctype="">
+        <input type="text" placeholder="id를 입력해주세요" name="id"><br>***********
+        <input type="password" placeholder="password를 입력해주세요"><br>*
+        <input type="color">머리색<br>
+        <input type="date"><br>
+        <input type="datetime"><br>
+        <input type="datetime-local"><br>
+        <input type="month"><br>
+        <input type="week"><br>
+        <input type="time"><br>
+        <input type="email"><br>
+        <input type="file"><br>*
+        <input type="image"><br>
+        <input type="checkbox">남자<br>*
+        <input type="radio">여자<br>*
+        <input type="hidden"><br>*<!--html의 내용은 보이지 않지만 form과 함께 정보는 전달된다.-->
+        <input type="number"><br>
+        <input type="range"><br>
+        <input type="reset"><br>
+        <input type="search"><br>
+        <input type="tel"><br>
+        <input type="url"><br>
+        <select>*****
+            <option>바나나</option>
+            <option>오렌지</option>
+        </select><br>
+        <textarea>********</textarea><br>
+        <input type="submit"><br>
+        <input type="button" value="버튼">*
+    </form>
+</body>
+</html>
