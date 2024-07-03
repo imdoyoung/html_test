@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #header{
+            background-color: #EBF5FF;
+            margin: 0px;
+        }
+        #body{
+            width: 100%;
+            align-content: center;
+        }
+        h1{
+            margin: 15px;
+            padding: 0px;
+        }
+        .textbox{
+            width: 200px;
+            height: 30px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            margin-left: 20px;
+        }
+        #bdtb{
+            width: 90%;
+            border-top: 1px solid #444444;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .bdth, .bdtd {
+            border-bottom: 1px solid #444444;
+            padding: 10px;
+            text-align: center;
+        }
+        #writer{
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <h1>Code</h1>
+        <form method="#" action="#">
+            <table>
+                <tr>
+                    <td>
+                        <select class="textbox">
+                            <option>N</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="textbox">
+                            <option>Y</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="textbox">
+                            <option>수정일</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="date" class="textbox">
+                    </td>
+                    <td>
+                        <input type="date" class="textbox">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="textbox">
+                            <option>검색구분</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="search" class="textbox">
+                    </td>
+                    <td colspan="3">
+                        <button type="button" onclick="location.href='#'">
+                            <img src="../image/search.png" width="20px" height="20px"/>
+                        </button>
+                        <button type="button" onclick="location.href='#'">
+                            <img src="../image/reset.png" width="20px" height="20px"/>
+                        </button>
+                    </td>            
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="body">
+        <form>
+            <table id="bdtb">
+                <caption>
+                    <a>Total:171</a>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </caption>
+                <tr>
+                    <th class="bdth">
+                        <input type="checkbox">
+                    </th>
+                    <th class="bdth">#</th>
+                    <th class="bdth">코드 그룹 코드</th>
+                    <th class="bdth">코드 그룹 이름</th>
+                    <th class="bdth">코드</th>
+                    <th class="bdth">대체 코드</th>
+                    <th class="bdth">코드 이름</th>
+                    <th class="bdth">코드 이름(영문)</th>
+                    <th class="bdth">사용</th>
+                    <th class="bdth">순서</th>
+                    <th class="bdth">등록일</th>
+                    <th class="bdth">수정일</th>
+                </tr>
+                <tr style="background-color: red;">
+                    <td class="bdtd">
+                        <input type="checkbox">
+                    </td>
+                    <td class="bdtd">171</td>
+                    <td class="bdtd">57</td>
+                    <td class="bdtd">테테테</td>
+                    <td class="bdtd">278</td>
+                    <td class="bdtd" id="writer" colspan="3">ㅁㄴㅇㄹ</td>
+                    <td class="bdtd">Y</td>
+                    <td class="bdtd">1</td>
+                    <td class="bdtd">2023-10-12 16:02:31</td>
+                    <td class="bdtd">2023-10-12 16:02:31</td>
+                </tr>
+                <tr>
+                    <td class="bdtd">
+                        <input type="checkbox">
+                    </td>
+                    <td class="bdtd">170</td>
+                    <td class="bdtd">33</td>
+                    <td class="bdtd">로그인.로그인UI</td>
+                    <td class="bdtd">272</td>
+                    <td class="bdtd" id="writer" colspan="3">사용자</td>
+                    <td class="bdtd">Y</td>
+                    <td class="bdtd">1</td>
+                    <td class="bdtd"></td>
+                    <td class="bdtd"></td>
+                </tr>
+                <tr>
+                    <td class="bdtd">
+                        <input type="checkbox">
+                    </td>
+                    <td class="bdtd">169</td>
+                    <td class="bdtd">33</td>
+                    <td class="bdtd">로그링.로그인UI</td>
+                    <td class="bdtd">272</td>
+                    <td class="bdtd" id="writer" colspan="3">관리자</td>
+                    <td class="bdtd">Y</td>
+                    <td class="bdtd">2</td>
+                    <td class="bdtd"></td>
+                    <td class="bdtd"></td>
+                </tr>
+                <tr>
+                    <td class="bdtd">
+                        <input type="checkbox">
+                    </td>
+                    <td class="bdtd">168</td>
+                    <td class="bdtd">32</td>
+                    <td class="bdtd">qna.타입</td>
+                    <td class="bdtd">266</td>
+                    <td class="bdtd" id="writer" colspan="3">기타</td>
+                    <td class="bdtd">Y</td>
+                    <td class="bdtd">1</td>
+                    <td class="bdtd"></td>
+                    <td class="bdtd"></td>
+                </tr>
+                <tr>
+                    <td class="bdtd">
+                        <input type="checkbox">
+                    </td>
+                    <td class="bdtd">167</td>
+                    <td class="bdtd">31</td>
+                    <td class="bdtd">qna.상태</td>
+                    <td class="bdtd">262</td>
+                    <td class="bdtd" id="writer" colspan="3">미확인</td>
+                    <td class="bdtd">Y</td>
+                    <td class="bdtd">1</td>
+                    <td class="bdtd"></td>
+                    <td class="bdtd"></td>
+                </tr>
+                <tr>
+                    <td colspan="12" align="center">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">></a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <div align="right">
+                <button type="button" onclick="location.href='./form.html'">
+                    <img src="../image/add.png" width="24px" height="24px"/>
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
