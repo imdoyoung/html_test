@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 연습2</title>
+    <!--Bootstrap css 사용할 수 있게 해주는 링크-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        .nava{
+            text-decoration: none;  /*a태그 밑줄 없애기*/
+            color: inherit;
+        }
+        
+        #menu{
+            list-style-type: none;  /*리스트 앞에 기호 없애기*/
+            margin: 2%;
+            padding: 0;
+            width: 25%;
+            height: 100%;
+            position: fixed;
+            overflow: auto;
+        }
+        #input{
+            width: 100%;
+        }
+        
+        textarea{
+            width: 100%;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <a href="#"><img src="../image/logo_adsrun.png" width="207" height="62"></a>
+    </header>
+    <nva>
+        <ul class="nav flex-column" style="position: fixed;">
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Home</a>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">E commerce</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Project management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">CRM</a>
+                    </li>
+                    <li>
+                        <a class="nav-link disabled" aria-disabled="true">Social feed</a>
+                    </li>
+                </ul>
+            </li>
+            <label>APPS</label>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">E commerce</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">CRM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Project management</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Chat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Email</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Kanban</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Social</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Calendar</a>
+            </li> 
+        </ul>
+    </nva>
+    <main>
+        <div style="margin-left: 25%;"><!--메뉴바 넓이 25%만큼 왼쪽에서 25% 띄워서 영역지정-->
+            <!--BreadCrumb-->
+            <div>
+                <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Page1</a></li>
+                        <li class="breadcrumb-item"><a href="#">Page2</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Default</li>
+                    </ol>
+                </nav>
+            </div>
+            <div>
+                <h1>Code</h1>
+            </div>
+            <div>
+                <form>
+                    <table border="1">
+                        <tr>
+                            <th colspan="4">
+                                <h2>기본정보</h2>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>코드그룹<a style="color: red;">*</a></label><br>
+                                <select style="width: 100%; height: 30px">
+                                    <option>선택하세요</option>
+                                    <option>이젠</option>
+                                    <option>아카데미</option>
+                                </select>
+                            </td>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>코드<a style="color: red;">*</a></label><br>
+                                <input type="text" class="input" placeholder="자동생성" readonly style="background-color: lightgrey;">
+                            </td>
+                            <td>
+                                <label>코드(ANOTHER)</label><br>
+                                <input type="text" class="input" placeholder="영대소문자,숫자">
+                            </td>
+                            <td>
+                                <label>코드 이름<a style="color: red;">*</a></label><br>
+                                <input type="text" class="input" placeholder="한글,영대소문자,숫자">
+                            </td>
+                            <td>
+                                <label>코드 이름(영문)</label><br>
+                                <input type="text" class="input" placeholder="영대소문자,숫자">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>사용여부<a style="color: red;">*</a></label><br>
+                                <select style="width: 100%; height: 30px">
+                                    <option>사용</option>
+                                    <option>미사용</option>
+                                </select>
+                            </td>
+                            <td>
+                                <label>순서<a style="color: red;">*</a></label><br>
+                                <input type="text" class="input">
+                            </td>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label>설명</label><br>
+                                <textarea></textarea>
+                            </td>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>다국어1</label><br>
+                                <input type="text" class="input">
+                            </td>
+                            <td>
+                                <label>다국어2</label><br>
+                                <input type="text" class="input">
+                            </td>
+                            <td>
+                                <label>다국어3</label><br>
+                                <input type="text" class="input">
+                            </td>
+                            <td>
+                                <label>다국어4</label><br>
+                                <input type="text" class="input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>다국어5</label><br>
+                                <input type="text" class="input">
+                            </td>
+                            <td>
+                                <label>다국어6</label><br>
+                                <input type="text" class="input">
+                            </td>
+                            <td>
+                                <label>다국어7</label><br>
+                                <input type="text" class="input">
+                            </td>
+                            <td>
+                                <label>다국어8</label><br>
+                                <input type="text" class="input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>예비1(VARCHAR TYPE)</label><br>
+                                <input type="text" class="input">
+                            </td>
+                            <td>
+                                <label>예비2(VARCHAR TYPE)</label><br>
+                                <input type="text" class="input">
+                            </td>
+                            <td>
+                                <label>예비3(VARCHAR TYPE)</label><br>
+                                <input type="text" class="input">
+                            </td>
+                            <td>
+                                <label>예비4(VARCHAR TYPE)</label><br>
+                                <input type="text" class="input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>예비1(INT TYPE)</label><br>
+                                <input type="text" class="input">
+                            </td>
+                            <td>
+                                <label>예비2(INT TYPE)</label><br>
+                                <input type="text" class="input">
+                            </td>
+                            <td>
+                                <label>예비3(INT TYPE)</label><br>
+                                <input type="text" class="input">
+                            </td>
+                            <td>
+                                <label>예비4(INT TYPE)</label><br>
+                                <input type="text" class="input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <button></button>
+                            </td>
+                            <td colspan="2"></td>
+                            <td align="right">
+                                <button type="button" onclick="location.href='./list2.html'"></button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer style="margin-left: 25%;">
+        <p>Thank you for creating with Phoenix | 2023 &copy;Themewagon</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>
